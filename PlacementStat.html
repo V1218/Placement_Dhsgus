@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Placement and Records</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+      color: #333;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      height: 20px;
+    }
+
+    header h2 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .tab {
+      padding: 12px 25px;
+      cursor: pointer;
+      background-color: #e3f2fd;
+      border: 2px solid #007bff;
+      margin-right: 5px;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      font-weight: bold;
+    }
+
+    .tab:hover {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .tab.active {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .content {
+      display: none;
+      padding: 20px;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 800px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .content.active {
+      display: block;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.95rem;
+    }
+
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+
+    }
+
+    table th {
+      background-color: #007bff;
+      color: white;
+      text-transform: uppercase;
+    }
+
+    table tbody tr:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Placement and Records</h2>
+  </header>
+  <div class="tabs">
+    <div class="tab active" onclick="switchTab('placement')">Placements</div>
+    <div class="tab" onclick="switchTab('Records')">Records</div>
+    <div class="tab" onclick="switchTab('internship')">Internship</div>
+    <div class="tab" onclick="switchTab('Reports')">Reports</div>
+  </div>
+
+  <!-- Placement Content -->
+  <div id="placement" class="content active">
+    <h2>Company wise Selected Students (2022-23)</h2>
+        <div>
+          <table>
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Name</th>
+          <th>Company</th>
+          <th>Stream</th>
+          <th>Package</th>
+        </tr>
+      </thead>
+      <tbody id="placement-table">
+        <tr>
+          <td>1</td>
+          <td>Ragnee Rajput</td>
+          <td>NEXTNCO Pvt. Ltd.</td>
+          <td>MBA</td>
+          <td>2.10 LPA</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Somya jain </td>
+          <td>NEXTNCO Pvt. Ltd.</td>
+          <td>MBA</td>
+          <td>2.10 LPA</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Jaya Asati</td>
+          <td>NEXTNCO Pvt. Ltd.</td>
+          <td>MBA</td>
+          <td>2.10 LPA</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Shubhangi Jain</td>
+          <td>NEXTNCO Pvt. Ltd.</td>
+          <td>MBA</td>
+          <td>2.10 LPA</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Pragati Verma</td>
+          <td>Tathya Forensic Wing Federation</td>
+          <td>M.Sc. Forensic</td>
+          <td>2.40 LPA</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Jagriti Chourasiya</td>
+          <td>Tathya Forensic Wing Federation</td>
+          <td>M.Sc. Forensic</td>
+          <td>2.40 LPA</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Kirti sahu</td>
+          <td>Federal Bank (PG)</td>
+          <td>M.COM</td>
+          <td>12 Lakh P.A</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Astha Jaiswal</td>
+          <td>Federal Bank (PG)</td>
+          <td>MBA</td>
+          <td>12 Lakh P.A</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Harsh Silawat</td>
+          <td>Hike Education Private Limited</td>
+          <td>MBA</td>
+          <td>7.02 LPA</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Priyanshi Yadav</td>
+          <td>Hike Education Private Limited</td>
+          <td>B.Com</td>
+          <td>5.82 LPA</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Ankita Bharadwaj </td>
+          <td>Hike Education Private Limited</td>
+          <td>B.Com.</td>
+          <td>5.82 LPA</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Shinki Jain</td>
+          <td>Hike Education Private Limited</td>
+          <td>MBA</td>
+          <td>7.02 LPA</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>Namandeep Rajput</td>
+          <td>Hike Education Private Limited</td>
+          <td>B.Com.</td>
+          <td>5.82 LPA</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td> Kirti Sahu</td>
+          <td>Hike Education Private Limited</td>
+          <td>M.Com.</td>
+          <td>7.02 LPA</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>Aditya Singh Chauhan</td>
+          <td>Hike Education Private Limited</td>
+          <td>B.Sc Forensic </td>
+          <td>5.82LPA</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>Adeesh Jain</td>
+          <td>Hike Education Private Limited</td>
+          <td>M.Com.</td>
+          <td>7.02LPA</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>Alok Suryawanshi</td>
+          <td>Justdial</td>
+          <td>MBA</td>
+          <td>2.76 LPA </td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>Paras Jain</td>
+          <td>Spectrum 2023</td>
+          <td>MBA</td>
+          <td>2.76 LPA </td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td>Alok Suryawanshi</td>
+          <td>Spectrum 2023</td>
+          <td>MBA</td>
+          <td>3.5LPA</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>Ashish </td>
+          <td>Spectrum 2023</td>
+          <td>MBA</td>
+          <td>3.5LPA</td>
+        </tr>
+        <tr>
+          <td>21</td>
+          <td>Aniket Sen</td>
+          <td>Spectrum 2023</td>
+          <td>MBA</td>
+          <td>3.5LPA </td>
+        </tr>
+        <tr>
+          <td>22</td>
+          <td>Sumit </td>
+          <td>Justdial</td>
+          <td>MBA</td>
+          <td>3.5LPA</td>
+        </tr>
+        <tr>
+          <td>23</td>
+          <td>Sunil Patel</td>
+          <td>Lupin</td>
+          <td>B.Sc.</td>
+          <td>2.06LPA</td>
+        </tr>
+        <tr>
+          <td>24</td>
+          <td>Aditya Pratap Singh</td>
+          <td>Azim Premji Foundation</td>
+          <td>Hindi Literature</td>
+          <td>4.32LPA</td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>Anshika Sharma</td>
+          <td>Azim Premji Foundation</td>
+          <td>Economics</td>
+          <td>4.32LPA</td>
+        </tr>
+        <tr>
+          <td>26</td>
+          <td>Mahima Jain</td>
+          <td>Azim Premji Foundation</td>
+          <td>Mathematics</td>
+          <td>4.32LPA </td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>Tushar Bhatnagar</td>
+          <td>TATA AIG</td>
+          <td>M.Sc Forensic </td>
+          <td>2.06LPA</td>
+        </tr>
+        <tr>
+          <td>28</td>
+          <td>Megha Soni</td>
+          <td>V Tech</td>
+          <td>B.C.A</td>
+          <td>2.76LPA</td>
+        </tr>
+        <tr>
+          <td>29</td>
+          <td>Deewan Nishant</td>
+          <td>Uproar Learning</td>
+          <td>B.Com</td>
+          <td>5.4LPA</td>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td>Harsh Pandey</td>
+          <td>Uproar Learning</td>
+          <td></td>
+          <td>5.4LPA</td>
+        </tr>
+        <tr>
+          <td>31</td>
+          <td>Nishi Yadav</td>
+          <td>Uproar Learning</td>
+          <td>B.Com</td>
+          <td>5.4LPA</td>
+        </tr>
+        <tr>
+          <td>32</td>
+          <td>Vishal Sharma</td>
+          <td>Drishti IAS</td>
+          <td>B.Com</td>
+          <td>3.36LPA</td>
+        </tr>
+        <tr>
+          <td>33</td>
+          <td>Aparna Dongsare</td>
+          <td>Drishti IAS</td>
+          <td>B.Sc</td>
+          <td>3.36LPA</td>
+        </tr>
+        <tr>
+          <td>34</td>
+          <td>Yash Thakur</td>
+          <td>Drishti IAS</td>
+          <td></td>
+          <td>3.36LPA</td>
+        </tr>
+        <tr>
+          <td>35</td>
+          <td>Raman sharma</td>
+          <td>Drishti IAS</td>
+          <td>B.Com</td>
+          <td>3.36LPA</td>
+        </tr>
+        <tr>
+          <td>36</td>
+          <td>Sandesh Pandey</td>
+          <td>Drishti IAS</td>
+          <td>MBA </td>
+          <td>3.36LPA</td>
+        </tr>
+        <tr>
+          <td>37</td>
+          <td>Roshini Kumari</td>
+          <td>Drishti IAS</td>
+          <td>B.Com</td>
+          <td>3.36LPA</td>
+        </tr>
+        <tr>
+          <td>38</td>
+          <td>Shruti Jain</td>
+          <td>Drishti IAS</td>
+          <td>MBA</td>
+          <td>3.36LPA</td>
+        </tr>
+        <tr>
+          <td>39</td>
+          <td>Dona Pal</td>
+          <td>Drishti IAS</td>
+          <td>MSc psychology</td>
+          <td>3.36LPA</td>
+        </tr>
+        <tr>
+          <td>40</td>
+          <td>Aryanika Agnihotri</td>
+          <td>Drishti IAS</td>
+          <td>B.Sc VI SEM</td>
+          <td>3.36LPA</td>
+        </tr>
+        <tr>
+          <td>41</td>
+          <td>Sheetal Singh</td>
+          <td>Drishti IAS</td>
+          <td>B.Sc VI SEM</td>
+          <td>3.36LPA</td>
+        </tr>
+        <tr>
+          <td>42</td>
+          <td>Harshit Soni</td>
+          <td>Drishti IAS</td>
+          <td>B.Sc VI SEM</td>
+          <td>3.36LPA</td>
+        </tr>
+        <tr>
+          <td>43</td>
+          <td>Ayushi Patel</td>
+          <td>Drishti IAS</td>
+          <td>BBA</td>
+          <td>3.36LPA</td>
+        </tr>
+        <tr>
+          <td>44</td>
+          <td>Alisha makrani</td>
+          <td>Drishti IAS</td>
+          <td>BBA</td>
+          <td>3.36LPA</td>
+        </tr>
+        <tr>
+          <td>45</td>
+          <td>Ramandeep singh Upveja</td>
+          <td>Drishti IAS</td>
+          <td>B.Sc VI SEM</td>
+          <td>3.36LPA</td>
+        </tr>
+        <tr>
+          <td>46</td>
+          <td>Amit Ahirwar</td>
+          <td>Drishti IAS</td>
+          <td>MBA</td>
+          <td>3.36LPA</td>
+        </tr>
+        <tr>
+          <td>47</td>
+          <td>Anushka saini</td>
+          <td>Braindesk</td>
+          <td>MCA</td>
+          <td>1.20 LPA</td>
+        </tr>
+        <tr>
+          <td>48</td>
+          <td>Neelam suryavanshi</td>
+          <td>Braindesk</td>
+          <td>MCA</td>
+          <td>1.20 LPA</td>
+        </tr>
+        <tr>
+          <td>49</td>
+          <td>Satakshi shukla</td>
+          <td>Braindesk</td>
+          <td>MCA</td>
+          <td>1.20 LPA</td>
+        </tr>
+        <tr>
+          <td>50</td>
+          <td>Vartika Jain</td>
+          <td>Braindesk</td>
+          <td>MCA</td>
+          <td>1.20 LPA</td>
+        </tr>
+        <tr>
+          <td>46</td>
+          <td>Princi Soni</td>
+          <td>Braindesk</td>
+          <td>MCA</td>
+          <td>1.20 LPA</td>
+        </tr>
+        <tr>
+          <td>46</td>
+          <td>Fiza Naaz</td>
+          <td>Braindesk</td>
+          <td>BCA</td>
+          <td>1.20 LPA</td>
+        </tr>
+        <tr>
+          <td>46</td>
+          <td>Deepika Gupta</td>
+          <td>Braindesk</td>
+          <td>BCA</td>
+          <td>1.20 LPA</td>
+        </tr>
+        <tr>
+          <td>46</td>
+          <td>Jayant Vishwakarma</td>
+          <td>Braindesk</td>
+          <td>BCA</td>
+          <td>1.20 LPA</td>
+        </tr>
+        <tr>
+          <td>47</td>
+          <td>Tanu Sahu</td>
+          <td>Axis Bank</td>
+          <td>MBA</td>
+          <td>5 LPA</td>
+        </tr>
+        <tr>
+          <td>48</td>
+          <td>Sachi Badkul</td>
+          <td>Axis Bank</td>
+          <td></td>
+          <td>5 LPA</td>
+        </tr>
+        <tr>
+          <td>49</td>
+          <td>Ayushman Dubey</td>
+          <td>Axis Bank</td>
+          <td></td>
+          <td>5 LPA</td>
+        </tr>
+        <tr>
+          <td>50</td>
+          <td>Asha Singh</td>
+          <td>Axis Bank</td>
+          <td></td>
+          <td>5 LPA</td>
+        </tr>
+        <tr>
+          <td>52</td>
+          <td>Garima Sharma</td>
+          <td>Axis Bank</td>
+          <td>MBA</td>
+          <td>5 LPA</td>
+        </tr>
+        <tr>
+          <td>53</td>
+          <td>Shivam Dubey</td>
+          <td>Axis Bank</td>
+          <td>B.Sc.</td>
+          <td>5 LPA</td>
+        </tr>
+        <tr>
+          <td>54</td>
+          <td>Pankaj Choubey</td>
+          <td>Axis Bank</td>
+          <td>B.Com.</td>
+          <td>5 LPA</td>
+        </tr>
+        <tr>
+          <td>55</td>
+          <td>Swati Mishra</td>
+          <td>Axis Bank</td>
+          <td>MBA</td>
+          <td>5 LPA</td>
+        </tr>
+        <tr>
+          <td>56</td>
+          <td>Khushi Agrawal</td>
+          <td>Axis Bank</td>
+          <td>B.Com</td>
+          <td>5 LPA</td>
+        </tr>
+        <tr>
+          <td>57</td>
+          <td>Anjali Kori</td>
+          <td>Axis Bank</td>
+          <td>MBA</td>
+          <td>5 LPA</td>
+        </tr>
+        <tr>
+          <td>58</td>
+          <td>Soumya Jain</td>
+          <td>Axis Bank</td>
+          <td>MBA</td>
+          <td>5 LPA</td>
+        </tr>
+        <tr>
+          <td>59</td>
+          <td>Priyanshi Yadav</td>
+          <td>Axis Bank</td>
+          <td>B.com</td>
+          <td>5 LPA</td>
+        </tr>
+        <tr>
+          <td>60</td>
+          <td>Poonam Rajgir</td>
+          <td>Axis Bank</td>
+          <td>B.com</td>
+          <td>5 LPA</td>
+        </tr>
+        <tr>
+          <td>61</td>
+          <td>Ashish Dubey</td>
+          <td>Axis Bank</td>
+          <td>MBA</td>
+          <td>5 LPA</td>
+        </tr>
+        <tr>
+          <td>62</td>
+          <td>Pinki Lodhi</td>
+          <td>Axis Bank</td>
+          <td>B.com</td>
+          <td>5 LPA</td>
+        </tr>
+        <tr>
+          <td>63</td>
+          <td>Ayush Sahu</td>
+          <td>Axis Bank</td>
+          <td>B.com</td>
+          <td>5 LPA</td>
+        </tr>
+        <tr>
+          <td>64</td>
+          <td>Palak Sahu</td>
+          <td>Axis Bank</td>
+          <td>B.com</td>
+          <td>5 LPA</td>
+        </tr>
+        <tr>
+          <td>65</td>
+          <td>Siwani Soni</td>
+          <td>Axis Bank</td>
+          <td>MBA</td>
+          <td>5 LPA</td>
+        </tr>
+        <tr>
+          <td>66</td>
+          <td>Neha Thakur</td>
+          <td>Axis Bank</td>
+          <td>MBA</td>
+          <td>5 LPA</td>
+        </tr>
+        <tr>
+          <td>67</td>
+          <td>Sanchit Tamrakar</td>
+          <td>Axis Bank</td>
+          <td>B.com</td>
+          <td>5 LPA</td>
+        </tr>
+        <tr>
+          <td>68</td>
+          <td>Hemant Ladiya</td>
+            <td>Axis Bank</td>
+          <td>B.Sc.</td>
+          <td>5 LPA</td>
+        </tr>
+        <tr>
+          <td>69</td>
+          <td>Etishree Shastri</td>
+          <td>Axis Bank</td>
+          <td>MBA</td>
+          <td>5 LPA</td>
+        </tr>
+        <tr>
+          <td>70</td>
+          <td>Rahul Karmali</td>
+          <td>Geology</td>
+          <td>MTech Geology</td>
+          <td>950USD Per month</td>
+        </tr>
+        <tr>
+          <td>71</td>
+          <td>Ravikant Sinha </td>
+          <td>Geology</td>
+          <td>MTech Geology </td>
+          <td>950USD Per month</td>
+        </tr>
+        <tr>
+          <td>72</td>
+          <td>Shubhank Chachondiya</td>
+          <td>Geology</td>
+          <td>MTech Geology</td>
+          <td>950USD Per month</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+  </div>
+
+  <!-- Records Content -->
+  <div id="Records" class="content">
+    <h2>Campus Placement Record (2022-23)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Name of Company Visited</th>
+          <th>Consent Received</th>
+          <th>Students Participated</th>
+          <th>Candidate Selected</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>NEXTNCO Pvt. Ltd</td>
+          <td>36</td>
+          <td>27</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Tathya Forensic Wing Federation </td>
+          <td>11</td>
+          <td>11</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Federal Bank (PG)</td>
+          <td>35</td>
+          <td>29</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>VTech Solutions Inc.</td>
+          <td>60</td>
+          <td>20</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Hike Edutech Pvt Ltd</td>
+          <td>205</td>
+          <td>125</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Justdial </td>
+          <td>150</td>
+          <td>26</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Spectrum Biocides India Private Limited</td>
+          <td>26</td>
+          <td>11</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Lupin</td>
+          <td>127</td>
+          <td>90</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Azim Premji Foundation</td>
+          <td>54</td>
+          <td>35</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Uproar Learning</td>
+          <td>74</td>
+          <td>50</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Tata AIG</td>
+          <td>12</td>
+          <td>4</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Braindesk</td>
+          <td>29</td>
+          <td>29</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>Axis Bank </td>
+          <td>600</td>
+          <td>71</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>Drishti IAS</td>
+          <td>140 </td>
+          <td>50</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>Geology </td>
+          <td>60</td>
+          <td>35 </td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Total</td>
+          <td></td>
+          <td> </td>
+          <td>79</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+   <!-- Internship Content -->
+   <div id="internship" class="content">
+    <h2>Internships (2022-23)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Company</th>
+          <th>Consent Received from Students</th>
+          <th>Students Participated</th>
+          <th>Candidate Selected</th>
+        </tr>
+      </thead>
+      <tbody id="Internship-table">
+        <tr>
+          <td>1</td>
+          <td>Regional Forensic laboratory Moradabad, UP</td>
+          <td>10</td>
+          <td>10</td>
+          <td>6</td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Name</th>
+          <th>Stream</th>
+        </tr>
+        <tbody id="Internship-table">
+          <tr>
+            <td>1</td>
+            <td>Hemant Ladiya</td>
+            <td>B.Sc. Forensic</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Anshika Kaurav</td>
+            <td>B.Sc. Forensic</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Aryanika Agnihotr</td>
+            <td>B.Sc. Forensic</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Harshit Soni</td>
+            <td>B.Sc. Forensic</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Sheetal Singh </td>
+            <td>B.Sc. Forensic</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Shanya Dubey</td>
+            <td>B.Sc. Forensic</td>
+          </tr>
+      </thead>
+    </tbody>
+  </table>
+      <tbody>
+        <h2>DEPARTMENT/STREAM WISE STUDENTS PLACED</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Sr.No.</th>
+              <th>DEPARTMENT / STREAM</th>
+              <th>No of Students Placed</th>
+            </tr>
+          </thead>
+          <tbody id="Internship-table">
+            <tr>
+              <td>1</td>
+              <td>MBA</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>B.Sc.</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>B.Com.</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>M.Com.</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>BCA</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>MA HINDI</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>MA ECONOMICS</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>M.Sc. Maths</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>M.Sc. Psychology </td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>M.Sc. Forensic Science</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>MCA</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>MTech Geology</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>BBA</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Others</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Total</td>
+              <td>79</td>
+            </tr>
+          </tbody>
+        </table>
+  </div>
+  <!-- Reports Content -->
+<div id="Reports" class="content">
+  <h2>Placement Reports</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Reports</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="static/2021-22.pdf">Session : 2021-22</a></td>
+      </tr>
+      <tr>
+        <td><a href="static/2020-21.pdf">Session : 2020-21</a></td>
+      </tr>
+      <tr>
+        <td><a href="static/2019-20.pdf">Session : 2019-20</a></td>
+      </tr>
+      <tr>
+        <td><a href="static/2018-19.pdf">Session : 2018-19</a></td>
+      </tr>
+      <tr>
+        <td><a href="static/2017-18.pdf">Session : 2017-18</a></td>
+      </tr>
+      <tr>
+        <td><a href="static/2016-17.pdf">Session : 2016-17</a></td>
+      </tr>
+      <tr>
+        <td><a href="static/2015-2016.pdf">Session : 2015-16</a></td>
+      </tr>
+      <tr>
+        <td><a href="static/Placement-Record.pdf">COMPANIES VISITED - Year wise report</a></td>
+      </tr>
+      <tr>
+        <td><a href="static/Placement-report-2015-22.pdf">Placement-report-2015 to 2022</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  <script>
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      document.querySelectorAll('.content').forEach(content => content.classList.remove('active'));
+
+      document.getElementById(tabId).classList.add('active');
+      document.querySelector(`.tab[onclick="switchTab('${tabId}')"]`).classList.add('active');
+      };
+  </script>
+</body>
+</html>

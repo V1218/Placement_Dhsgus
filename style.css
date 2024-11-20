@@ -451,3 +451,198 @@ footer {
     text-align: justify;
     line-height: 28px;
 }
+/* Recruiters Section Styling */
+.recruiters-section {
+    padding: 20px;
+    background-color: #f0f8ff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.recruiters-section h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #007bff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.recruiters-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0 auto 20px;
+    max-width: 900px;
+    color: #333;
+}
+
+/* Recruiter Statistics Section */
+.recruiter-statistics {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.recruiter-stat {
+    background-color: #e8f8ff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recruiter-stat h3 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.recruiter-stat p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Recruiter Testimonials */
+.recruiter-testimonials {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    width: calc(33.33% - 30px);
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+.testimonial p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 10px;
+}
+
+.testimonial strong {
+    display: block;
+    font-size: 14px;
+    color: #007bff;
+    margin-top: 10px;
+    text-align: right;
+}
+
+/* Responsive Testimonials */
+@media (max-width: 768px) {
+    .testimonial {
+        width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 576px) {
+    .testimonial {
+        width: 100%;
+    }
+}
+
+/* Recruiter Carousel */
+.recruiter-carousel {
+    overflow: hidden;
+    background-color: #e8f8ff;
+    padding: 10px 0;
+    border-radius: 8px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    animation: scrollCarousel 15s linear infinite;
+}
+
+.carousel-track img {
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Keyframes for Scrolling Effect */
+@keyframes scrollCarousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Registration Section */
+.registration-section {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.registration-section .button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.registration-section .button:hover {
+    background-color: #005baa;
+}
+
+/* Recruiters Footer */
+.recruiters-footer {
+    background-color: #1a3d7d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 4px solid #fff;
+    font-size: 14px;
+}
+
+.recruiters-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.recruiters-footer ul li {
+    margin: 0 10px;
+}
+
+.recruiters-footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
