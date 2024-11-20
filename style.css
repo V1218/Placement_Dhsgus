@@ -119,7 +119,7 @@ nav a:hover {
 section {
     padding: 10px;
     margin: 1px auto;
-    background-color: #cbf0e6;
+    background-color: #dae7ee;
     border-bottom: 4px solid #205d65;
     border-radius: 8px;
     transition: background-color 0.3s ease;
@@ -203,12 +203,12 @@ footer {
 }
 
 .paragraph {
-    font-size: 19px;
-    line-height: 1.6;
+    font-size: 18px;
+    line-height: 1.0;
     text-justify: auto;
     margin: 0px auto;
-    width: 90%;
-    max-width: 1280px;
+    width: 100%;
+    max-width: 1450px;
     line-height: 35px;
 }
 
@@ -451,198 +451,221 @@ footer {
     text-align: justify;
     line-height: 28px;
 }
-/* Recruiters Section Styling */
-.recruiters-section {
-    padding: 20px;
-    background-color: #f0f8ff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin: 20px auto;
-    max-width: 1200px;
+
+    /* General Reset */
+
+/* Pillars of Strength Grid */
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 20px;
 }
 
-.recruiters-section h2 {
-    text-align: center;
-    font-size: 28px;
-    color: #007bff;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: bold;
+.pillar-item {
+    background-color: #082c3d;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgb(236, 231, 231);
 }
 
-.recruiters-section p {
-    font-size: 18px;
-    line-height: 1.6;
-    text-align: justify;
-    margin: 0 auto 20px;
-    max-width: 900px;
-    color: #333;
-}
-
-/* Recruiter Statistics Section */
-.recruiter-statistics {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 20px 0;
-}
-
-.recruiter-stat {
-    background-color: #e8f8ff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin: 10px;
-    padding: 20px;
-    width: 200px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.recruiter-stat h3 {
-    font-size: 2rem;
-    color: #007bff;
+.pillar-item h3 {
+    color: #f6f7f4;
+    font-size: 22px;
     margin-bottom: 10px;
 }
 
-.recruiter-stat p {
+.pillar-item p {
     font-size: 16px;
-    color: #333;
+    color: #dbc9c9;
 }
 
-/* Recruiter Testimonials */
-.recruiter-testimonials {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px auto;
-    max-width: 1200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Recruitment Process Section */
+#procedure {
+    background-color: #e6f0ff;
+}
+#procedure p{
+ font-size: 21px;
+ margin-left: 40px;
+}
+#procedure ol {
+    font-size: 18px;
+    margin: 2px 0;
+    padding-left: 65px;
 }
 
-.testimonial {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin: 15px;
-    padding: 20px;
-    width: calc(33.33% - 30px);
-    box-sizing: border-box;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: justify;
+#procedure li {
+    margin-bottom: 10px;
 }
 
-.testimonial p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin: 0 0 10px;
-}
-
-.testimonial strong {
-    display: block;
-    font-size: 14px;
-    color: #007bff;
-    margin-top: 10px;
-    text-align: right;
-}
-
-/* Responsive Testimonials */
-@media (max-width: 768px) {
-    .testimonial {
-        width: calc(50% - 30px);
-    }
-}
-
-@media (max-width: 576px) {
-    .testimonial {
-        width: 100%;
-    }
-}
-
-/* Recruiter Carousel */
-.recruiter-carousel {
-    overflow: hidden;
-    background-color: #e8f8ff;
-    padding: 10px 0;
-    border-radius: 8px;
-    margin: 20px 0;
-    position: relative;
-}
-
-.carousel-track {
+/* Company Registration Form */
+#registration form {
     display: flex;
-    gap: 20px;
-    animation: scrollCarousel 15s linear infinite;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.carousel-track img {
-    height: 150px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+#registration label {
+    font-size: 18px;
+    color: #003366;
 }
 
-/* Keyframes for Scrolling Effect */
-@keyframes scrollCarousel {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-/* Registration Section */
-.registration-section {
-    text-align: center;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin: 20px auto;
-    max-width: 800px;
-}
-
-.registration-section .button {
-    display: inline-block;
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
+#registration input, #registration textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
+    font-size: 16px;
+}
+
+#registration textarea {
+    resize: vertical;
+}
+
+#registration input[type="submit"] {
+    background-color: #003366;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.registration-section .button:hover {
-    background-color: #005baa;
+#registration input[type="submit"]:hover {
+    background-color: #0055a5;
 }
 
-/* Recruiters Footer */
-.recruiters-footer {
-    background-color: #1a3d7d;
+/* Footer Styling */
+footer {
+    background-color: #003366;
     color: white;
-    padding: 20px;
     text-align: center;
-    margin-top: 40px;
-    border-top: 4px solid #fff;
+    padding: 20px;
     font-size: 14px;
 }
 
-.recruiters-footer ul {
+footer .footer-links ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
-.recruiters-footer ul li {
-    margin: 0 10px;
+footer .footer-links ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-.recruiters-footer ul li a {
+footer .footer-links ul li a {
     color: white;
-    text-decoration: none;
     font-size: 14px;
 }
+
+footer .footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hover Effects for Sections */
+section:hover {
+    background-color: #e6f7ff;
+}
+
+
+
+/* Interactive Button Styling */
+.button {
+    background-color: #003366;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0055a5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pillars-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .button, #registration input[type="submit"] {
+        font-size: 16px;
+    }
+}
+.recruiter-carousel_new {
+    position: relative;
+    overflow: hidden; /* Ensures images don't overflow the section */
+    width: 100%; /* Carousel takes full width */
+    background-color: #e8f8ff; /* Background color */
+}
+
+.carousel-track_new {
+    display: flex;
+    gap: 30px;
+    animation: scrollCarousel 22s linear infinite; /* Continuous scrolling animation */
+}
+
+.carousel-track_new img {
+    height: 260px;
+    width: 400px;
+    border-radius: 8px; /* Optional rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+.rules-section {
+    width: 95%;
+    max-width: 1300px;
+    margin: 15px auto;
+    padding: 5px 8px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Title */
+.rules-section h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2px;
+    color: #0077b6;
+}
+
+/* Rules List */
+.rules-list {
+    list-style: none;
+   padding-left: 120px;
+    align-items: center;
+}
+
+/* Individual Rule Item */
+.rule-item {
+    font-size: 17px;
+    position: relative;
+    align-items: center;
+    width: 85%;
+    margin: 15px 0;
+    padding: 12px 15px;
+    padding-left: 22px;
+    background: #f4f4f4;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect */
+.rule-item:hover {
+    transform: scale(1.02);
+    background-color: #e0f7fa;
+}
+
+/* Rule Title */
+.rule-title {
+    display: block;
+    font-weight: bold;
+    color: #0077b6;
+    margin-bottom: 5px;
+}
+
