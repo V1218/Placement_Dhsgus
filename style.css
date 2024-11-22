@@ -41,9 +41,14 @@ header {
     padding: 10px 20px;
 }
 
-.logo-left,
+.logo-left{
+    height: 80px;
+    width: auto;
+    padding-left: 340px; 
+}
 .logo-right {
-    height: 90px;
+    height: 80px;
+    padding-right: 340px;
     width: auto;
 }
 
